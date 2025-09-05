@@ -71,6 +71,8 @@ with col1:
         title="Distribution of participants by group number",
         order=["1", "2", "3"],
     )
+    st.text(f"Count per group:")
+    st.table(this_df.groupby("group")["group"].count())
 
     U.plot_box_plot(
         this_df,
@@ -81,6 +83,8 @@ with col1:
         title="Click distribution across groups",
         order=["1, 2, 3"],
     )
+    st.text(f"Mean per group:")
+    st.table(this_df.groupby("group")["num_clicks"].mean())
 
     U.plot_box_plot(
         this_df,
@@ -91,6 +95,8 @@ with col1:
         title="Time taken per task across groups",
         order=["1, 2, 3"],
     )
+    st.text(f"Mean per group:")
+    st.table(this_df.groupby("group")["time_taken_s"].mean())
 
     U.plot_box_plot(
         this_df,
@@ -116,6 +122,8 @@ with col2:
         title="Scroll distribution across groups",
         order=["1, 2, 3"],
     )
+    st.text(f"Mean per group:")
+    st.table(this_df.groupby("group")["num_scrolls"].mean())
 
     U.plot_box_plot(
         this_df,
@@ -126,6 +134,8 @@ with col2:
         title="Number of URLs across groups",
         order=["1, 2, 3"],
     )
+    st.text(f"Mean per group:")
+    st.table(this_df.groupby("group")["num_URLs"].mean())
 
     U.plot_box_plot(
         this_df,
@@ -136,6 +146,8 @@ with col2:
         title="Number of Google Search URLs",
         order=["1, 2, 3"],
     )
+    st.text(f"Mean per group:")
+    st.table(this_df.groupby("group")["num_google_urls_1"].mean())
 
     U.plot_box_plot(
         this_df,
@@ -146,3 +158,5 @@ with col2:
         title="Fraction of Google Search URLs across groups",
         order=["1, 2, 3"],
     )
+    st.text(f"Mean per group:")
+    st.table(this_df.groupby("group")["fraction_google_urls_1"].mean())
