@@ -39,7 +39,7 @@ df = U.process_raw_df(df)
 with st.sidebar:
     st.subheader("Filters")
     # t_group = st.multiselect("Treatment Group", [1, 2, 3])
-    task_id = st.multiselect("Task ID", [1, 2, 3, 4, 5, 6])
+    # task_id = st.multiselect("Task ID", [1, 2, 3, 4, 5, 6])
 
     final_study_filter = st.checkbox("Only final study", value=True)
     if final_study_filter:
