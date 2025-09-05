@@ -17,7 +17,7 @@ import json
 with open("tasks.json", "rb") as f:
     TASKS = json.load(f)
 
-df = U.process_raw_df(df)
+df = U.process_raw_df(U.get_display_df(df))
 
 # clean_df = df[
 #     [
