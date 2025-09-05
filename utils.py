@@ -63,14 +63,15 @@ def get_display_df(df):
 
     # st.text(df.columns)
 
-    # df["task_prompt"] = df.apply(
-    #     lambda row: TASKS[f"set{row['group']}"][row["task_rank"]], axis=1
-    # )
+    df["task_prompt"] = df.apply(
+        lambda row: TASKS[f"set{row['group']}"][int(row["task_rank"]) - 1], axis=1
+    )
+
     return df[
         [
             "user_id",
             "group",
-            # "task_prompt",
+            "task_prompt",
             "task_rank",
             "answer",
             "SERP_length",
