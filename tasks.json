@@ -1,0 +1,26 @@
+{
+    "set1": [
+        "What is the leading cause of death in the UK?",
+        "What is the income limit for receiving Universal Credit?",
+        "How much money do asylum seekers get in the UK per week?",
+        "How many nuclear warheads does the UK possess?",
+        "What is the sentence for illegally having a gun in the UK?",
+        "How long does an uncovered glass of water remain safe to drink?"
+    ],
+    "set2": [
+        "Which elements can make certain paints radioactive?",
+        "How long does it take to recover from an ACL injury?",
+        "What fruit has the highest potassium content per serving?",
+        "What is the oldest university still in operation?",
+        "How much weight can an average untrained woman carry on her back?",
+        "How long does an uncovered glass of water remain safe to drink?"
+    ],
+    "set3": [
+        "What country spends the highest percentage of GDP on social protection?",
+        "Who is the largest defence contractor in the world by market cap?",
+        "Which food produces the highest methane emission per kg?",
+        "What crime has the highest conviction rate globally?",
+        "What building material is increasingly being used in low-income housing?",
+        "How long does an uncovered glass of water remain safe to drink?"
+    ]
+}
