@@ -67,17 +67,18 @@ def get_display_df(df):
     #     lambda row: TASKS[f"set{row['group']}"][row["task_rank"]], axis=1
     # )
     return df[
-        "user_id",
-        "group",
-        # "task_prompt",
-        "task_rank",
-        "answer",
-        "SERP_length",
-        "og_task_id",
-        "num_clicks",
-        "avg_scroll_length",
-        "num_URLs",
-        "time_taken_s",
-        "num_google_URLs",
-        "fraction_google_URLs",
+        [
+            "user_id",
+            "group",
+            # "task_prompt",
+            "task_rank",
+            "answer",
+            "SERP_length",
+            "og_task_id",
+            "num_clicks",
+            "avg_scroll_length",
+            "num_URLs",
+            "time_taken_s",
+            "lastUpdated",
+        ]
     ]
